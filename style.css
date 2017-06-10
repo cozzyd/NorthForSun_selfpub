@@ -1,17 +1,27 @@
+
+/* Style file for e-book version of North for Sun, a novel by Marie Deaconu-Baylon (see http://mariedeaconubaylon.com). 
+ * This file was written by Cosmin Deaconu <cozzyd@gmail.com> and is freely available under the GPLv3 */
+
+
+/* This is for the table of contents to indent the chapters relative to the part */ 
 div.chapter { margin-left: 1em}
 
+/* Style for acknowledgements: no indent and one line in between paragraphs */ 
 #ack p 
 {
   text-indent: 0em; 
   margin-top: 1em; 
 }
 
+
+/* Style for author: no indent and one line in between paragraphs */
 #aut p 
 {
   text-indent: 0em; 
   margin-top: 1em; 
 }
 
+/* Style for heading of acknowledgment */ 
 #ack h1
 {
   font-size: 1.5em; 
@@ -19,13 +29,14 @@ div.chapter { margin-left: 1em}
   padding-top: 2em; 
   text-align: left; 
 }
-
+/* Style for acknowledgment... this just forces a new page */
 #ack 
 {
   page-break-before: always; 
 
 }
 
+/* Don't indent first paragraph, so first paragraph in each chapter must have class=ni */
 .ni p 
 {
   text-align: justify; 
@@ -34,6 +45,7 @@ div.chapter { margin-left: 1em}
   padding: 0; 
 }
 
+/* Horizontal rule style */
 hr
 {
   width: 3em; 
@@ -43,6 +55,7 @@ hr
 
 }
 
+/*Dedication paragraph is italicized */
 #ded p 
 {
 
@@ -51,12 +64,15 @@ hr
   font-style: italic; 
 }
 
+/* Forces page break before dedication */ 
 #ded
 {
   page-break-before: always; 
 }
 
 
+/* This is the main style of the book. We want indentations and no extra space between lines, a
+ * as well as justified text */
 p 
 {
   text-align: justify; 
@@ -66,12 +82,14 @@ p
 }
 
 
+/* This is for the title page title*/
 #tit h1
 {
   text-align: center; 
   page-break-before: avoid; 
 }
 
+/* This is for the title page author */
 #tit h3
 {
   text-align: center; 
@@ -79,33 +97,44 @@ p
 }
 
 
+/* This is for each part, we want a page break there ! */
 .prt
 {
   page-break-before: always; 
 }
 
+
+/* This doesn't actually do anything... probably
+ * had something here before and if you wanted to do something
+ * to the title page, you could do it here */ 
 #tit
 {
 }
 
+/* add a page break before author page */
 #aut
 {
   page-break-before: always; 
 
 }
 
+
+/* page break before copyright section */
 #cop
 {
   page-break-before: always; 
 }
 
 
+/*Part titles... we want them halfway through the page */
 h1
 {
   text-align: center;
   padding-top: 50%; 
 }
 
+/* Chapter headings, we want a page break before
+ * and some margin above and below */
 h2
 {
   page-break-before: always; 
