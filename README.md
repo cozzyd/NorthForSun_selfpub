@@ -1,9 +1,10 @@
-# NorthForSun Self-Publication resources. 
+# NorthForSun Self-Publication resources 
 
 Tools used to produce print and ebook versions of North for Sun. The code is
-made available under the GPLv3 license (see LICENSE), however the book e
-excerpt and all images are all rights reserved Marie Deaconu-Baylon. For more
-information, see [http://mariedeaconubaylon.com](http//mariedeaconubaylon.com) 
+made available under the GPLv3 license (see LICENSE); however the book excerpt
+and all images are all rights reserved Marie Deaconu-Baylon. For more
+information, see [http://mariedeaconubaylon.com](http//mariedeaconubaylon.com). 
+
 
 
 [createspace.sty](https://github.com/aginiewicz/createspace) is required for LaTeX and not included in this distribution (you can just put the file in the same directory). 
