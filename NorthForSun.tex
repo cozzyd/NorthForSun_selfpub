@@ -1,0 +1,92 @@
+\documentclass[openany,10pt]{memoir}
+
+%\usepackage[placement=top,color=gray]{background} 
+%\usepackage{titlesec}
+\usepackage{graphicx} 
+
+\usepackage[size=pocket,trim=2,gutter=0.75in,inner=0.375in,outer=0.625in,top=0.875in,bottom=1in,noicc,paper=cream]{createspace}
+\usepackage[english]{babel}
+\usepackage[scaled=1.05]{ebgaramond}
+\usepackage[T1]{fontenc} 
+\addto\captionsenglish{\renewcommand{\partname}{}}
+\renewcommand{\thepart}{}
+
+
+
+\setSingleSpace{1.1}
+\SingleSpacing
+
+
+
+%\titleformat{\chapter}[display]
+%{\normalfont\huge}{ \centering \hrule \textsc{\chaptertitlename\ \thechapter} \hrule \vspace{1pt} \hrule }{20pt}{\Huge}
+%\titlespacing{\chapter}{0pt}{0pt}{2.9em}
+
+\usepackage{csquotes}
+\usepackage{microtype}
+\MakeOuterQuote{"}
+
+\newcommand{\mdbrule}{\centerline{\rule{0.125\linewidth}{.2pt}} \smallskip} 
+
+\author{Marie Deaconu-Baylon}
+\title{North for Sun}
+\date{} 
+
+\setlength\emergencystretch{1.0em}
+%\copypagestyle{chapter}{plain} % make chapter a page style of its own
+%\makeevenfoot{chapter}{}{}{}
+%\makeoddfoot{chapter}{}{}{}
+%\makeevenhead{chapter}{}{}{\thepage}
+%\makeoddhead{chapter}{}{}{}
+
+%\traditionalparskip
+
+
+\begin{document}
+\frontmatter
+\clearpage
+\maketitle 
+\thispagestyle{empty}
+\clearpage
+
+\makeevenhead{headings}{}{}{}
+\makeoddhead{headings}{}{}{}
+\makeevenfoot{headings}{}{\thepage}{}
+\makeoddfoot{headings}{}{\thepage}{}
+
+\textcircled{\tiny{C}} 2017, Marie Deaconu-Baylon.  Except as provided by the Copyright Act, no part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means without the prior written permission of the publisher. 
+
+
+\clearpage 
+\include{dedication} 
+\clearpage
+
+\mainmatter
+\makeevenhead{headings}{}{\emph{\textsc{North for Sun}}}{}
+\makeoddhead{headings}{}{\textsc{Chapter} \thechapter}{}
+\makeevenfoot{headings}{}{\thepage}{}
+\makeoddfoot{headings}{}{\thepage}{}
+
+
+\include{manuscript} 
+\backmatter
+\newpage
+\newpage
+\makeevenhead{headings}{}{}{}
+\makeoddhead{headings}{}{}{}
+\makeevenfoot{headings}{}{\thepage}{}
+\makeoddfoot{headings}{}{\thepage}{}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+\setlength{\parskip}{8pt}
+\setlength{\parindent}{0pt}
+\include{acknowledgements}
+\newpage
+\null
+\input{author} 
+
+\end{document}
+
+
+

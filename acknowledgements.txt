@@ -1,0 +1,46 @@
+[latexonly] \chapter*{Acknowledgments} 
+[htmlonly] <div id="ack"><h1><a name="acknowledgments"></a>Acknowledgments</h1>
+
+In writing this book, I enjoyed going back to my college times, especially my own third freshman year.  I have too many acknowledgments, but I'm going to embrace the beauty of self-publishing and not hold back.  Thank you to the characters who helped me graduate and tell this story.
+
+#Cosmin#: My husband, for all of our days, especially for your time creating our book
+
+#Claire#: My friend and editor, for honoring our book
+
+#Tim, Amanda, and Tita Nannette#: For your excitement before you met the book, for your help after you read
+
+#Mom, Dad, Nanay, Lolo Che, Mommy Laly, and Daddy Nap#: For giving me life, for the stories and all the books, for the revolution
+
+#NJ, Mabel Ann, Karen, Jenny, and John#: When you were born, I got one more best friend
+
+#Krystle, Maggie, and Jackie#: My kindred spirits, who loved and understood me first
+
+#Grady#: Friend of my life, you teach me about love
+
+#Terry McGinn and Betty Jo Azpell#: For believing in all of your students, for giving me enough happy experiences that made my later recovery possible
+
+#Ninang Agnes and Ninong Arnel#: For loving me, especially for hosting me in Los Angeles
+
+#Tito Gani, Tita Judy, and Kovu#:  My family at Stanford, for welcoming me into your home again and again
+
+#Sara#: For our tower room, our fun, our summer, staying my friend, and making me hang out with Cosmin
+
+#Danny and Steven#: My summer crew, for helping me when I almost failed school, got evicted, and got married
+
+#Brittany#: Half of the best roommate pair, for helping me finally finish freshman year, for showing me that writers are real people
+
+#Jonathan#: My day one buddy
+
+#Mindy#: My partner in fun and joyful discovery, for making me believe again in the possibility of dreams
+
+#Chuck#: For inspiring me to advocate and live well for others, for all the laughs
+
+#Pastor Greg#: My role model for wholly participating in the life of a community, for our teamwork in two most memorable adventures
+
+#Madiha#: My first friend of adulthood, for teaching me about friendship throughout life
+
+#Dr. Leahy#: For your kindness and healing
+
+#Bill#: The one who sticks
+
+[htmlonly]</div> 

@@ -1,0 +1,114 @@
+div.chapter { margin-left: 1em}
+
+#ack p 
+{
+  text-indent: 0em; 
+  margin-top: 1em; 
+}
+
+#aut p 
+{
+  text-indent: 0em; 
+  margin-top: 1em; 
+}
+
+#ack h1
+{
+  font-size: 1.5em; 
+  margin-bottom: 4em; 
+  padding-top: 2em; 
+  text-align: left; 
+}
+
+#ack 
+{
+  page-break-before: always; 
+
+}
+
+.ni p 
+{
+  text-align: justify; 
+  text-indent: 0; 
+  margin: 0;
+  padding: 0; 
+}
+
+hr
+{
+  width: 3em; 
+  border: none; 
+  background-color: black; 
+  height: 1px; 
+
+}
+
+#ded p 
+{
+
+  text-indent: 0em; 
+  margin: 1em; 
+  font-style: italic; 
+}
+
+#ded
+{
+  page-break-before: always; 
+}
+
+
+p 
+{
+  text-align: justify; 
+  text-indent: 1em; 
+  margin: 0; 
+  padding: 0; 
+}
+
+
+#tit h1
+{
+  text-align: center; 
+  page-break-before: avoid; 
+}
+
+#tit h3
+{
+  text-align: center; 
+  page-break-before: avoid; 
+}
+
+
+.prt
+{
+  page-break-before: always; 
+}
+
+#tit
+{
+}
+
+#aut
+{
+  page-break-before: always; 
+
+}
+
+#cop
+{
+  page-break-before: always; 
+}
+
+
+h1
+{
+  text-align: center;
+  padding-top: 50%; 
+}
+
+h2
+{
+  page-break-before: always; 
+  margin-bottom: 4em; 
+  padding-top: 2em; 
+}

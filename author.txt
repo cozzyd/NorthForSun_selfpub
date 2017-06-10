@@ -1,0 +1,14 @@
+
+[latexonly]\vspace{3.5cm}
+[latexonly]\begin{center}
+[latexonly]  \includegraphics[width=0.75in]{author.png} 
+[latexonly]\end{center}
+[htmlonly]<div id="aut">
+[htmlonly]<a name="author"></a> 
+[htmlonly]<p style="text-align:center;">
+[htmlonly]  <img width="20%" src="author.jpg">
+[htmlonly]</p>
+
+Marie Deaconu-Baylon was born in Manila, Philippines and grew up in Wisconsin.  Marie studied Philosophy as an undergraduate at Stanford University.  She earned a master's degree from University of Chicago School of Social Service Administration.  Marie lives in Chicago with her Romanian-American husband and manic depression.
+
+[htmlonly]</div>

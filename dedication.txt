@@ -1,0 +1,9 @@
+[htmlonly]<a name="dedication"></a> 
+[htmlonly] <div id="ded"> 
+
+For Cosmin, my favorite book
+
+For Nanay, our story-teller and historian
+
+[htmlonly] </div> 
+
