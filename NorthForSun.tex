@@ -1,89 +1,133 @@
+% CreateSpace layout for North for Sun, a novel by Marie Deaconu-Baylon (see http://mariedeaconubaylon.com) 
+% This file is written by Cosmin Deaconu (cozzyd@gmail.com) and is freely licensed under the GPLv3 (see LICENSE). 
+% This file is thoroughly annotated 
+%
+% As you may have figured out lines starting with % are comments and do not affect the code
+
+
+% We are using the memoir class, which sets a bunch of differet settings on style. we set the font size to 10 but will scale it later (since our font doesn't support fractional sizes natiely). 
+% openany means that a chapter can start on both left and right pages, otherwise they can only start on right pages
 \documentclass[openany,10pt]{memoir}
 
+
+% uncomment the following line to put draft at the top 
 %\usepackage[placement=top,color=gray]{background} 
-%\usepackage{titlesec}
+
+% the following  line allows loading graphics
 \usepackage{graphicx} 
 
+% The folowing line requires createspace.sty and sets a lot of things about the book. See the createspace.sty documentation for more details, but basically we set the page size and margins here
 \usepackage[size=pocket,trim=2,gutter=0.75in,inner=0.375in,outer=0.625in,top=0.875in,bottom=1in,noicc,paper=cream]{createspace}
+
+% The following line is used for automatic quotes
 \usepackage[english]{babel}
+
+% The following line sets the font and scales it by 1.05. 10 pt * 1.05 = 10.5 pt
 \usepackage[scaled=1.05]{ebgaramond}
+
+% don't remember if this was needed or not
 \usepackage[T1]{fontenc} 
+
+%This defines the style of the part pages. Here it will just say the name of the part
 \addto\captionsenglish{\renewcommand{\partname}{}}
 \renewcommand{\thepart}{}
 
 
 
+%Sets the line spacing 
 \setSingleSpace{1.1}
 \SingleSpacing
 
 
 
-%\titleformat{\chapter}[display]
-%{\normalfont\huge}{ \centering \hrule \textsc{\chaptertitlename\ \thechapter} \hrule \vspace{1pt} \hrule }{20pt}{\Huge}
-%\titlespacing{\chapter}{0pt}{0pt}{2.9em}
-
+%Used for smart quotes
 \usepackage{csquotes}
+
 \usepackage{microtype}
+
+%defines smart quotes
 \MakeOuterQuote{"}
 
+%this defines a new command \mdbrule that is a small rule 
 \newcommand{\mdbrule}{\centerline{\rule{0.125\linewidth}{.2pt}} \smallskip} 
 
+% metaddata 
 \author{Marie Deaconu-Baylon}
 \title{North for Sun}
 \date{} 
 
+%this adjusts to what extent LaTeX will allow stretching of text to avoid going over the edge
 \setlength\emergencystretch{1.0em}
-%\copypagestyle{chapter}{plain} % make chapter a page style of its own
-%\makeevenfoot{chapter}{}{}{}
-%\makeoddfoot{chapter}{}{}{}
-%\makeevenhead{chapter}{}{}{\thepage}
-%\makeoddhead{chapter}{}{}{}
-
-%\traditionalparskip
 
 
+%now e can start! 
 \begin{document}
+
+%this tells us we are currently in the front matter part
 \frontmatter
-\clearpage
-\maketitle 
-\thispagestyle{empty}
+
+%start a new page
 \clearpage
 
+%make the title and author.
+\maketitle 
+
+% this page shouldn't have a number
+\thispagestyle{empty}
+
+%new page
+\clearpage
+
+
+%adjust header/footer styles 
 \makeevenhead{headings}{}{}{}
 \makeoddhead{headings}{}{}{}
 \makeevenfoot{headings}{}{\thepage}{}
 \makeoddfoot{headings}{}{\thepage}{}
 
+%the copyright notice. Obviously you'll at least want to change the name 
 \textcircled{\tiny{C}} 2017, Marie Deaconu-Baylon.  Except as provided by the Copyright Act, no part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means without the prior written permission of the publisher. 
 
 
+%new page
 \clearpage 
+
+%includes dedication.tex, 
 \include{dedication} 
 \clearpage
 
+% tells LaTeX we are now in the main part of the boo
 \mainmatter
-\makeevenhead{headings}{}{\emph{\textsc{North for Sun}}}{}
+
+%Change the headers and footers for the main part
+\makeevenhead{headings}{}{\emph{\textsc{North for Sun}}}{} %emph is italics, textsc is smallcaps
 \makeoddhead{headings}{}{\textsc{Chapter} \thechapter}{}
 \makeevenfoot{headings}{}{\thepage}{}
 \makeoddfoot{headings}{}{\thepage}{}
 
+% includes manuscript.tex, the bulk of the book
 
 \include{manuscript} 
+
+%%now for the backmatter
 \backmatter
-\newpage
-\newpage
+
+%starts new pages and new footer / header style
 \makeevenhead{headings}{}{}{}
 \makeoddhead{headings}{}{}{}
 \makeevenfoot{headings}{}{\thepage}{}
 \makeoddfoot{headings}{}{\thepage}{}
 
+%Empty page might be wanted here
 \newpage\null\thispagestyle{empty}\newpage
 
+%change the indent style for the acknowledgment
 \setlength{\parskip}{8pt}
 \setlength{\parindent}{0pt}
-\include{acknowledgements}
+\include{acknowledgements} %include acknowledgments.tex
 \newpage
 \null
+%include author.tex
 \input{author} 
 
 \end{document}
