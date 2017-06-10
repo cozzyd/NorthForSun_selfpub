@@ -18,7 +18,7 @@ Ad-hoc custom formatting syntax was used for the .txt files, which is then conve
 - custom latex syntax is inserted with [latexonly] at the start of the line 
 - All chapters are just numbered and are on a line by themselves e.g. Chapter 1
 - Each part starts with XXXXX. For now, since parts aren't numbered, you also have to add an anchor if you want one there manually.
-- # is used for emphasis (italics) 
+- `#` is used for emphasis (italics) 
 - `****` or `~~~` is used for rules 
 - @ is used for smallcaps
 
